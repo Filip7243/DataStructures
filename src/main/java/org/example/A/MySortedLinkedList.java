@@ -23,26 +23,25 @@ public class MySortedLinkedList {
             }
 
             if (current == null) { // elem goes to last position
-                System.out.println("ELEMENT POWINIEN IŚĆ NA OSTATNIĄ POZYCJE " + value);
-                if(last == null) {
+//                System.out.println("ELEMENT POWINIEN IŚĆ NA OSTATNIĄ POZYCJE " + value);
+                if(last == null) { // it means that only one elem in list
                     last = newElem;
                     first.next = last;
                     last.previous = first;
+                } else {
+                    last.next = newElem;
+                    newElem.previous = last;
+                    newElem.next = null;
+                    last = newElem;
                 }
-                last.next = newElem;
-                newElem.previous = last;
-                newElem.next = null;
-                last = newElem;
             } else if(current.previous == null) { // elem goes to first position
-                System.out.println("ELEMENT POWINIEN IŚĆ NA PIERWSZĄ POZYCJE " + value);
-                if(first.next == null) {
+                if(first.next == null) { // it means it's only one elem in list
                     last = first;
                 }
                 current.previous = newElem;
                 newElem.next = current;
                 first = newElem;
             } else {
-                System.out.println("ELEMENT POWINIEN IŚĆ NA ŚRODEK GDZIEŚ " + value);
                 current.previous.next = newElem;
                 newElem.previous = current.previous;
                 newElem.next = current;
