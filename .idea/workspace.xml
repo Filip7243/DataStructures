@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9732fd02-b91b-4e5f-b652-03c68b426cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/A/MyHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/ArrayListStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +47,13 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MyHashTable">
-    <configuration name="MyDynamicArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.A.MyDynamicArray" />
+  <component name="RunManager" selected="Application.ArrayListStack">
+    <configuration name="ArrayListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListStack" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.A.*" />
+          <option name="PATTERN" value="org.example.B.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayListStack" />
         <item itemvalue="Application.MyHashTable" />
         <item itemvalue="Application.MySortedLinkedList" />
         <item itemvalue="Application.MyLinkedList" />
         <item itemvalue="Application.MyDynamicArraySorted" />
-        <item itemvalue="Application.MyDynamicArray" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674300200012</updated>
-      <workItem from="1674300202746" duration="17926000" />
+      <workItem from="1674300202746" duration="19987000" />
     </task>
     <servers />
   </component>
