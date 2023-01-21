@@ -1,46 +1,43 @@
 package org.example.B;
 
-import java.util.TreeSet;
+import java.util.HashSet;
 
-public class SetWithTreeSet<T> {
+public class SetWithHashSet<T> {
 
-    private TreeSet<T> set;
+    private HashSet<T> hashSet;
 
-    public SetWithTreeSet() {
-        this.set = new TreeSet<>();
+    public SetWithHashSet() {
+        this.hashSet = new HashSet<>();
     }
 
-    public void add(T elem) { // adding elem if not exists yet
-        set.add(elem);
+    public void add(T elem) {
+        hashSet.add(elem);
     }
 
-    public boolean contains(T elem) { // check if set contains elem
-        return set.contains(elem);
+    public boolean contains(T elem) {
+        return hashSet.contains(elem);
     }
 
-    public boolean delete(T elem) { // removes elem if exists
-        return set.remove(elem);
+    public boolean delete(T elem) {
+        return hashSet.remove(elem);
     }
 
-    public SetWithTreeSet<T> union(SetWithTreeSet<T> secondSet) { // sum of two sets
-        SetWithTreeSet<T> result = new SetWithTreeSet<>();
-
-        // iterate threw THIS set
-        for (T value : set) {
-            result.add(value);
+    public SetWithHashSet<T> union(SetWithHashSet<T> secondSet) {
+        SetWithHashSet<T> result = new SetWithHashSet<>();
+        for (T elem : hashSet) {
+            result.add(elem);
         }
 
-        // iterate threw second set
-        for (T t : secondSet.getSet()) {
-            result.add(t);
+        for (T elem : secondSet.getSet()) {
+            result.add(elem);
         }
 
         return result;
     }
 
-    public SetWithTreeSet<T> intersection(SetWithTreeSet<T> secondSet) { // returns part of the common of those two sets
-        SetWithTreeSet<T> result = new SetWithTreeSet<>();
-        for (T elem : set) { // iterate threw THIS set
+    public SetWithHashSet<T> intersection(SetWithHashSet<T> secondSet) {
+        SetWithHashSet<T> result = new SetWithHashSet<>();
+        for (T elem : hashSet) {
             if (secondSet.contains(elem)) {
                 result.add(elem);
             }
@@ -49,10 +46,10 @@ public class SetWithTreeSet<T> {
         return result;
     }
 
-    public SetWithTreeSet<T> difference(SetWithTreeSet<T> secondSet) {
-        SetWithTreeSet<T> result = new SetWithTreeSet<>();
-        for (T elem : set) {
-            if(!secondSet.contains(elem)) {
+    public SetWithHashSet<T> difference(SetWithHashSet<T> secondSet) {
+        SetWithHashSet<T> result = new SetWithHashSet<>();
+        for (T elem : hashSet) {
+            if (!secondSet.contains(elem)) {
                 result.add(elem);
             }
         }
@@ -61,16 +58,16 @@ public class SetWithTreeSet<T> {
     }
 
     public int size() {
-        return set.size();
+        return hashSet.size();
     }
 
-    public TreeSet<T> getSet() {
-        return set;
+    public HashSet<T> getSet() {
+        return hashSet;
     }
 
     public void print() {
-        for (T elem : set) {
-            System.out.println(elem);
+        for (T t : hashSet) {
+            System.out.println(t);
         }
     }
 
@@ -100,7 +97,7 @@ public class SetWithTreeSet<T> {
         union.print(); // wszystko (bez duplikatów)
         System.out.println("*************************");
         SetWithTreeSet<Student> difference = setA.difference(setB);
-        difference.print(); // a, d
+        difference.print(); // a, b
         System.out.println("*************************");
 
         setA.delete(c);
@@ -115,6 +112,4 @@ public class SetWithTreeSet<T> {
         SetWithTreeSet<Student> difference1 = setA.difference(setB);
         difference1.print(); // a, b
     }
-
-
 }

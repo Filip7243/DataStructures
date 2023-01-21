@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9732fd02-b91b-4e5f-b652-03c68b426cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithTreeSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/B/ArrayListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/B/ArrayListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithTreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithTreeSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +47,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SetWithTreeSet">
-    <configuration name="ArrayListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListQueue" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.B.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SetWithHashSet">
     <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.LinkedListQueue" />
       <module name="DataStructures" />
@@ -101,6 +87,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SetWithHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.B.SetWithHashSet" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SetWithTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.SetWithTreeSet" />
       <module name="DataStructures" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SetWithHashSet" />
         <item itemvalue="Application.SetWithTreeSet" />
         <item itemvalue="Application.MyLinkedList" />
         <item itemvalue="Application.MyArrayList" />
         <item itemvalue="Application.LinkedListQueue" />
-        <item itemvalue="Application.ArrayListQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674300200012</updated>
-      <workItem from="1674300202746" duration="25384000" />
+      <workItem from="1674300202746" duration="26059000" />
     </task>
     <servers />
   </component>
