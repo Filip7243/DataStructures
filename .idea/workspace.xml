@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9732fd02-b91b-4e5f-b652-03c68b426cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MyArrayList">
+  <component name="RunManager" selected="Application.MyLinkedList">
     <configuration name="ArrayListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListQueue" />
       <module name="DataStructures" />
@@ -87,19 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.B.LinkedListStack" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.B.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.MyArrayList" />
       <module name="DataStructures" />
@@ -113,13 +100,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.B.MyLinkedList" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyLinkedList" />
         <item itemvalue="Application.MyArrayList" />
         <item itemvalue="Application.LinkedListQueue" />
         <item itemvalue="Application.ArrayListQueue" />
         <item itemvalue="Application.ArrayListStack" />
-        <item itemvalue="Application.LinkedListStack" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674300200012</updated>
-      <workItem from="1674300202746" duration="22032000" />
+      <workItem from="1674300202746" duration="23303000" />
     </task>
     <servers />
   </component>
