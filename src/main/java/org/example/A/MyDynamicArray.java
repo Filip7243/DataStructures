@@ -1,5 +1,7 @@
 package org.example.A;
 
+import com.sun.security.jgss.GSSUtil;
+
 public class MyDynamicArray {
 
     private Student[] arr;
@@ -78,11 +80,11 @@ public class MyDynamicArray {
 
     public static void main(String[] args) {
         MyDynamicArray students = new MyDynamicArray(10);
-        students.add(new Student("Adam", "Nawałka", 400200));
-        students.add(new Student("Kasia", "Mroczek", 642001));
-        students.add(new Student("Mike", "Doe", 320918));
-        students.add(new Student("John", "Iniesta", 320919));
-        Student value = new Student("Leo", "Messi", 120210);
+        students.add(new Student("Adam", "Nawałka", 400200, 54));
+        students.add(new Student("Kasia", "Mroczek", 642001, 28));
+        students.add(new Student("Mike", "Doe", 320918, 13));
+        students.add(new Student("John", "Iniesta", 320919, 11));
+        Student value = new Student("Leo", "Messi", 120210, 9);
         students.add(value);
 
         students.print();
@@ -93,30 +95,33 @@ public class MyDynamicArray {
         students.print();
         System.out.println("******");
         System.out.println(students.get(3));
-        System.out.println(students.find(new Student("Adam", "Nawałka", 400200))); // should be -1
-        System.out.println(students.find2(new Student("Kasia", "Mroczek", 642001))); // should return index
+        System.out.println(students.find(new Student("Adam", "Nawałka", 400200, 20))); // should be -1
+        System.out.println(students.find2(new Student("Kasia", "Mroczek", 642001, 31))); // should return index
         System.out.println(students.find(value)); // should return index
         System.out.println(students.find2(value)); // should return index
     }
 
 }
 
-class Student {
+class Student implements Comparable<Student> {
 
     private String firstName;
     private String lastName;
     private int albumId;
+    private int age;
 
     public Student() {
         this.firstName = "";
         this.lastName = "";
         this.albumId = 0;
+        this.age = 0;
     }
 
-    public Student(String firstName, String lastName, int albumId) {
+    public Student(String firstName, String lastName, int albumId, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.albumId = albumId;
+        this.age = age;
     }
 
     public String getFirstName() {
@@ -143,8 +148,39 @@ class Student {
         this.albumId = albumId;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
-        return "First Name: " + firstName + ", Last Name: " + lastName + ", Album: " + albumId;
+        return "First Name: " + firstName + ", Last Name: " + lastName + ", Album: " + albumId + ", Age: " + age;
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        // returns 0 if objects equals
+        // returns < 0 if this object is less than other
+        // return > 0 if object is grater than other
+        // we will compare on age if age equals we compare on lastName if lastName is equal we compare on fistName
+
+        if(this.age < o.getAge()) {
+            return -1;
+        }
+        if(this.age > o.getAge()) {
+            return 1;
+        }
+        if(this.age == o.getAge() && this.lastName.compareTo(o.getLastName()) != 0) {
+            System.out.println("Porównuje = " + this.lastName + " z " + o.getLastName() + " wynik to: " + this.lastName.compareTo(o.getLastName()));
+            return this.lastName.compareTo(o.getLastName());
+        }
+        if(this.age == o.getAge() && this.firstName.compareTo(o.getFirstName()) != 0) {
+            return this.firstName.compareTo(o.getFirstName());
+        }
+        return 0;
     }
 }
