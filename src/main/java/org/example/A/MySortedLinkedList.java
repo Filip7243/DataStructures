@@ -54,7 +54,7 @@ public class MySortedLinkedList {
         ListElem elemToRemove = find(value);
         if (elemToRemove != null) {
             if (isFirst(elemToRemove)) {
-                if(elemToRemove.next == null) {
+                if(elemToRemove.next == null) { // it's only element on list
                     first = null;
                     last = null;
                 } else {

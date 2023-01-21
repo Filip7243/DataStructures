@@ -2,25 +2,25 @@ package org.example.B;
 
 import java.util.ArrayList;
 
-public class ArrayListStack {
+public class ArrayListStack<T> {
 
-    private ArrayList<Student> stack;
+    private ArrayList<T> stack;
 
     public ArrayListStack() {
         this.stack = new ArrayList<>();
     }
 
-    public void push(Student elem) {
+    public void push(T elem) { // adding elem to top of the stack
         stack.add(elem);
     }
 
-    public Student pop() {
-        Student lastElem = stack.get(stack.size() - 1);
+    public T pop() { // returns and removes elem on top of the stack
+        T lastElem = stack.get(stack.size() - 1);
         stack.remove(lastElem);
         return lastElem;
     }
 
-    public Student peek() {
+    public T peek() { // return elem on top of the stack
         return stack.get(stack.size() - 1);
     }
 
@@ -35,7 +35,7 @@ public class ArrayListStack {
         Student d = new Student("Robert", "Kubica", 100000);
         Student e = new Student("Zbigniew", "Stonoga", 11);
 
-        ArrayListStack stack = new ArrayListStack();
+        ArrayListStack<Student> stack = new ArrayListStack<>();
         stack.push(a);
         stack.push(b);
         stack.push(c);
@@ -46,6 +46,7 @@ public class ArrayListStack {
         stack.push(d);
         stack.push(e);
 
+        // printing
         while (!stack.isEmpty()) {
             Student pop = stack.pop();
             System.out.println(pop);
