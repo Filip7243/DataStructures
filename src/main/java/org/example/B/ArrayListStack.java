@@ -1,6 +1,7 @@
 package org.example.B;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class ArrayListStack<T> {
 
@@ -54,7 +55,7 @@ public class ArrayListStack<T> {
     }
 }
 
-class Student {
+class Student implements Comparable<Student> {
     private String firstName;
     private String lastName;
     private int age;
@@ -92,5 +93,22 @@ class Student {
     @Override
     public String toString() {
         return "First Name: " + firstName + ", Last Name: " + lastName + ", age" + age;
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        if(this.getAge() < o.getAge()) {
+            return -1;
+        }
+        if(this.getAge() > o.getAge()) {
+            return 1;
+        }
+        if(this.getAge() == o.getAge() && this.getLastName().compareTo(o.getLastName()) != 0) {
+            return this.getLastName().compareTo(o.getLastName());
+        }
+        if(this.getAge() == o.getAge() && this.getFirstName().compareTo(o.getFirstName()) != 0) {
+            return this.getFirstName().compareTo(o.getFirstName());
+        }
+        return 0;
     }
 }
