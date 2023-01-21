@@ -47,7 +47,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ArrayListQueue">
+  <component name="RunManager" selected="Application.LinkedListQueue">
     <configuration name="ArrayListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListQueue" />
       <module name="DataStructures" />
@@ -63,6 +63,19 @@
     </configuration>
     <configuration name="ArrayListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListStack" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.B.LinkedListQueue" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
@@ -100,26 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySortedLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.A.MySortedLinkedList" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.A.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedListQueue" />
         <item itemvalue="Application.ArrayListQueue" />
         <item itemvalue="Application.ArrayListStack" />
         <item itemvalue="Application.LinkedListStack" />
         <item itemvalue="Application.MyHashTable" />
-        <item itemvalue="Application.MySortedLinkedList" />
       </list>
     </recent_temporary>
   </component>
