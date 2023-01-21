@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9732fd02-b91b-4e5f-b652-03c68b426cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/LinkedListStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/A/MySortedLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/A/MySortedLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/B/ArrayListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/B/ArrayListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/ArrayListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,20 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ArrayListStack">
+  <component name="RunManager" selected="Application.ArrayListQueue">
+    <configuration name="ArrayListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListQueue" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArrayListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.B.ArrayListStack" />
       <module name="DataStructures" />
@@ -88,19 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.A.MyLinkedList" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.A.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MySortedLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.A.MySortedLinkedList" />
       <module name="DataStructures" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayListQueue" />
         <item itemvalue="Application.ArrayListStack" />
         <item itemvalue="Application.LinkedListStack" />
         <item itemvalue="Application.MyHashTable" />
         <item itemvalue="Application.MySortedLinkedList" />
-        <item itemvalue="Application.MyLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674300200012</updated>
-      <workItem from="1674300202746" duration="20340000" />
+      <workItem from="1674300202746" duration="21047000" />
     </task>
     <servers />
   </component>
