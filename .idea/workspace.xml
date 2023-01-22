@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9732fd02-b91b-4e5f-b652-03c68b426cdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithTreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/B/SetWithTreeSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/C/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Filip/Downloads/structures_copy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,13 +48,13 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SetWithHashSet">
-    <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.B.LinkedListQueue" />
+  <component name="RunManager" selected="Application.MergeSort">
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.C.MergeSort" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.B.*" />
+          <option name="PATTERN" value="org.example.C.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.SetWithHashSet" />
         <item itemvalue="Application.SetWithTreeSet" />
         <item itemvalue="Application.MyLinkedList" />
         <item itemvalue="Application.MyArrayList" />
-        <item itemvalue="Application.LinkedListQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +132,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674300200012</updated>
-      <workItem from="1674300202746" duration="26059000" />
+      <workItem from="1674300202746" duration="26228000" />
+      <workItem from="1674387062951" duration="1698000" />
     </task>
     <servers />
   </component>
